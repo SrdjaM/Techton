@@ -1,0 +1,118 @@
+.page_details {
+  background: linear-gradient(
+    to bottom,
+    #000,
+    #514643,
+    #514643,
+    #514643,
+    #514643,
+    #000
+  );
+  height: 100vh;
+  position: relative;
+
+  &-container {
+    padding: 20px;
+    background: linear-gradient(
+      to right bottom,
+      rgba(240, 240, 240, 0.9),
+      rgba(240, 240, 240, 0.6)
+    );
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    border-radius: 3px;
+  }
+}
+
+.product {
+  &_image {
+    max-width: 300px;
+    height: 400px;
+    background-color: white;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 3px;
+  }
+
+  &_details {
+    text-align: center;
+  }
+
+  &_name {
+    margin-bottom: 20px;
+  }
+
+  &_color {
+    position: relative;
+  }
+  &_color-circle {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 45px;
+      height: 45px;
+      border: 2px solid;
+      border-radius: 50%;
+    }
+  }
+
+  &_btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &_color-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+  }
+
+  &_price-rating {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 40px;
+  }
+
+  &_description {
+    margin-bottom: 40px;
+  }
+}
+
+.image {
+  max-width: 200px;
+}
+
+.btn_action {
+  padding: 10px 20px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border: 0.5px solid;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #eee;
+}
+
+.cart_number{
+    padding: 10px 10px;
+    border: 0.5px solid;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    background-color: #eee;
+}

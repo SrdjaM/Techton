@@ -1,0 +1,27 @@
+<div class="products">
+  <div class="products_container">
+    <div class="products_list" *ngFor="let product of products">
+      <a
+        [routerLink]="['/products', product.productId]"
+        class="product_container"
+      >
+        <div class="product_banner">
+          <img
+            class="product_image"
+            [src]="product.imageUrl"
+            alt="picture of a product"
+          />
+        </div>
+        <div class="product_name">
+          {{ product.productName }}
+        </div>
+        <div class="product_description">
+          {{ product.description }}
+        </div>
+        <div class="product_price">
+          {{ product.price | currency : "USD" : "symbol" : "1.2-2" }}
+        </div>
+      </a>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,44 @@
+.main {
+  &_navbar {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 200px;
+    background-color: transparent;
+    position: absolute;
+    top: 0;
+    z-index: 10;
+  }
+
+  &_logo {
+    color: #fff;
+  }
+
+  &_link {
+    color: #fff;
+    text-transform: uppercase;
+    margin-left: 20px;
+    cursor: pointer;
+  }
+
+  &_link:hover {
+    border-bottom: 3px solid #fff;
+  }
+}
+
+.image {
+  width: 100%;
+}
+
+.links {
+  list-style: none;
+  display: flex;
+}
+
+.logo {
+  cursor: pointer;
+  text-decoration: none;
+  color: #fff;
+  font-size: 24px;
+}

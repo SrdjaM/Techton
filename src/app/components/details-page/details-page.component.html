@@ -1,0 +1,41 @@
+<div class="page_details">
+  <div class="page_details-container" *ngIf="product">
+    <div class="product_image">
+      <img class="image" [src]="product.imageUrl" alt="product image" />
+    </div>
+    <div class="product_details">
+      <div class="product_name">{{ product.productName }}</div>
+      <div class="product_price-rating">
+        <div class="product_price">
+          {{ product.price | currency : "USD" : "symbol" : "1.2-2" }}
+        </div>
+        <div class="product_rating">{{ product.rating }}</div>
+      </div>
+      <div class="product_color-container">
+        <div class="product_color-div" [ngStyle]="{ color: product.color }">
+          <div
+            class="product_color-circle"
+            [ngStyle]="{ 'background-color': product.color }"
+          ></div>
+        </div>
+        <div class="product_color" [ngStyle]="{ color: product.color }">
+          {{ product.color }}
+        </div>
+      </div>
+      <div class="product_description">{{ product.description }}</div>
+      <div class="product_btn">
+        <div class="cart_number">
+          <mat-form-field>
+            <mat-label>Select a number</mat-label>
+            <mat-select [(value)]="selectedNumber">
+              <mat-option *ngFor="let number of numbers" [value]="number">
+                {{ number }}
+              </mat-option>
+            </mat-select>
+          </mat-form-field>
+        </div>
+        <button class="btn_action">Add to cart</button>
+      </div>
+    </div>
+  </div>
+</div>

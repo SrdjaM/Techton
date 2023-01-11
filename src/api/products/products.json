@@ -1,0 +1,57 @@
+[
+  {
+    "productId": 1,
+    "productName": "Oculus Touch Controllers",
+    "productCode": "OCU",
+    "releaseDate": "March 19, 2021",
+    "description": "Oculus Touch is the motion controller system used by Reality Labs",
+    "price": 315.23,
+    "imageUrl": "assets/images/console.png",
+    "color": "black",
+    "rating": 4.6
+  },
+  {
+    "productId": 2,
+    "productName": "Vuzix VR Home Theater",
+    "productCode": "VUZ",
+    "releaseDate": "March 18, 2021",
+    "description": "Virtual VR Home Theater Eyewear",
+    "price": 242.5,
+    "imageUrl": "assets/images/vr-back.png",
+    "color": "black",
+    "rating": 4.3
+  },
+  {
+    "productId": 3,
+    "productName": "Samsung Gear VR",
+    "productCode": "SAM-VR",
+    "releaseDate": "May 21, 2021",
+    "description": "Virtual VR Home Theater Eyewear",
+    "price": 194.65,
+    "imageUrl": "assets/images/vr-black.png",
+    "color": "black",
+    "rating": 4.4
+  },
+  {
+    "productId": 4,
+    "productName": "Samsung Oculus VR Headset",
+    "productCode": "SAM-OCU",
+    "releaseDate": "May 15, 2021",
+    "description": "Virtual VR Home Theater Eyewear",
+    "price": 284.55,
+    "imageUrl": "assets/images/SamsungOculus.png",
+    "color": "white",
+    "rating": 4.7
+  },
+  {
+    "productId": 5,
+    "productName": "PlayStation VR Headset",
+    "productCode": "PST",
+    "releaseDate": "October 15, 2020",
+    "description": "PlayStation VR Head Gear",
+    "price": 243.55,
+    "imageUrl": "assets/images/PlayStation.png",
+    "color": "white",
+    "rating": 4.2
+  }
+]

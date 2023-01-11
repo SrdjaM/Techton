@@ -1,0 +1,44 @@
+.main {
+  background: linear-gradient(
+    to bottom,
+    #000,
+    #514643,
+    #514643,
+    #514643,
+    #514643,
+    #000
+  );
+  height: 100vh;
+  position: relative;
+
+  &_bilboard {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    &-text {
+      color: #fff;
+      font-size: 110px;
+      text-transform: uppercase;
+      margin-bottom: 40px;
+    }
+  }
+
+  &_slogan {
+    color: #fff;
+    font-size: 40px;
+    text-transform: uppercase;
+  }
+
+  &_image {
+    width: 700px;
+    position: absolute;
+    top: -10%;
+    z-index: -1;
+  }
+}
+
+.image {
+  width: 100%;
+}
